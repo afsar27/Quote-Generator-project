@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400;600&family=Pacifico&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background:#efefef;
+}
+
+.container{
+    justify-content: center;
+    background: #777;
+    width:700px;
+    position:absolute;
+    top : 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* height:300px;
+    display:table-row; */
+}
+.container h2,blockquote,span{
+    color: whitesmoke;
+  text-shadow:
+    0 0 7px red,
+    0 0 10px red,
+    0 0 21px red,
+    0 0 42px   rgb(115, 0, 0),
+    0 0 82px   rgb(115, 0, 0),
+    0 0 92px   rgb(115, 0, 0),
+    0 0 102px  rgb(115, 0, 0),
+    0 0 151px black;
+    /* text-transform: uppercase; */
+}
+
+.container h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.container h2::after{
+    content: ' ';
+    width: 75px;
+    height: 2px;
+    border-radius: 3px;
+    background: rgb(113, 0, 0);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.container blockquote::before ,.container blockquote::after{
+    content: '"';
+}
+.container span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.container span::before{
+    content: '';
+     width: 13px;
+     height: 2px;
+     background:rgb(113, 0, 0) ; 
+     position: absolute;
+     top:50%;
+     left: -30px;
+}
+.container div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container button{
+    border-radius: 25px;
+    width: 150px;
+    height:50px;
+    outline: 0;
+    cursor: pointer;
+    margin:5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: rgb(90, 86, 86);
+    color: whitesmoke;
+    border: 0;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container button img{
+    width:35px;
+    height:35px;
+}
